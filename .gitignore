@@ -3,10 +3,12 @@ private-site-uk
 public-site-uk
 public-site
 json
+html
+
+## Node ##
 node_modules
 package.json
 package-lock.json
-html
 
 ### LaTeX ###
 ## Core latex/pdflatex auxiliary files:
@@ -536,5 +538,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows,tex,latex
