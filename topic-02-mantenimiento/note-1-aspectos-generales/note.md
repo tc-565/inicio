@@ -1,6 +1,6 @@
 ---
 icon: 
-  type: line-md:edit
+  type: material-symbols:rule
   color: e2ac08 
 ---
 # Aspectos generales

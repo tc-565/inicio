@@ -1,6 +1,6 @@
 ---
 icon: 
-  type: line-md:edit
+  type: gridicons:add
   color: e2ac08 
 ---
 # Cómo incorporar cursos

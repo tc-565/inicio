@@ -1,6 +1,6 @@
 ---
 icon: 
-  type: line-md:edit
+  type: mdi:security
   color: e2ac08 
 ---
 # Elementos de seguridad
