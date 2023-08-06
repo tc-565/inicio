@@ -13,6 +13,8 @@ Antes de solicitar la revisión de su curso para ser incluido en la página prin
 * La carta `Código fuente del curso` redirecciona al repositorio del curso, y se modificó su descripción.
 * Se modificaron el título y créditos del curso.
 * Se modificó la imagen (`course.png`) del curso.
+* El material se adaptó debida y completamente, con la inclusión de código fuente en el caso de archivos `.tex`, o del documento original, en el caso de archivos de texto (`.docx`, `.txt`, `.rtf`) o presentaciones (`.pptx`).
+* Los archivos de texto o documentos (no beamer) en `.tex` fueron adaptados como notas en markdown. 
 
 ## Crear un issue
 1. Diríjase a la página [https://github.com/tc-565/inicio/issues/new/choose](https://github.com/tc-565/inicio/issues/new/choose).
