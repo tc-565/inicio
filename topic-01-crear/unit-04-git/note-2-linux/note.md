@@ -6,6 +6,8 @@ icon:
 # Linux
 Instalación de Git y GitHub Desktop en Linux
 
+[[toc]]
+
 ## Git
 ### Revisar si hay una instalación existente
 Antes que nada, revise si Git está instalado en su sistema con el comando ``git —version``. Si Git no está instalado, habrá un mensaje de error.

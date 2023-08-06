@@ -20,7 +20,7 @@ Los recursos de aprendizaje generalmente se nombran para que coincidan con el co
 
 El uso y visualización de las características descritas en este documento puede ser consultado en la [plantilla](https://github.com/tc-565/plantilla) y su [despliegue](https://tc-565.github.io/plantilla) respectivamente.
 
-[toc]
+[[toc]]
 
 ## Nombres de recursos
 

@@ -6,6 +6,8 @@ icon:
 # macOS
 Instalación de Git y GitHub Desktop en macOS
 
+[[toc]]
+
 ## Homebrew
 Para instalar Git y GitHub Desktop, y posteriormente Node, lo mejor es instalar el reconocido gestor de paquetes Homebrew para macOS.
 

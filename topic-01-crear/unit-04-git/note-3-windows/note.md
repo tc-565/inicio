@@ -6,6 +6,8 @@ icon:
 # Windows
 Instalación de Git y GitHub Desktop en Windows
 
+[[toc]]
+
 ## Git
 ## Paso 1: Descargar el instalador más reciente de Git para Windows
 

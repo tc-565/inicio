@@ -1,6 +1,8 @@
 # Instalación de tutors-html
 Instalación de tutors-html
 
+[[toc]]
+
 ## tutors-html
 El paquete [tutors-html](https://www.npmjs.com/package/tutors-html) es una herramienta que permite la compilación a HTML de sitios web estáticos escritos en Markdown, y siguiendo una estructura definida en el proyecto [tutors](https://github.com/tutors-sdk/tutors).
 

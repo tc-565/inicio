@@ -8,6 +8,8 @@ Gestione el repositorio desde su computadora con GH Desktop
 
 Para usar GitHub Desktop a fondo, puede consultar la documentación oficial en [https://docs.github.com/es/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop](https://docs.github.com/es/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop).
 
+[[toc]]
+
 ## Inicialización de GitHub desktop
 1. Inicie sesión en GitHub Desktop con su cuenta de GitHub.
 2. Configure su correo y nombre para hacer commits con la opción predeterminada sugerida por la aplicación.

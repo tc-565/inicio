@@ -8,7 +8,7 @@ Puede utilizar un editor de Markdown para trabajar localmente en su computadora
 
 Los editores de Markdown en muchos casos permiten escribir sin tener que conocer los elementos de sintaxis de Markdown, permitiendo escribir de manera similar a como se hace en Word u otros editores de texto.
 
-[toc]
+[[toc]]
 
 ## macOS
 En macOS se recomienda utilizar el editor open source [MarkEdit](https://github.com/MarkEdit-app/MarkEdit), el cual se puede descargar desde el [App Store](https://apps.apple.com/us/app/markedit-for-markdown/id1669953820?mt=12). ![](img/MarkEdit.png)
