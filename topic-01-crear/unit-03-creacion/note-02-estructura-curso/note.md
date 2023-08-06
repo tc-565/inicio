@@ -7,6 +7,8 @@ icon:
 
 Descripción de los objetos en un curso
 
+**Nota:** esta documentación fue adaptada y traducida de la oficial de [tutors](https://reader.tutors.dev/course/tutors-reference-manual), debido a que la original menciona funcionalidades que no están disponibles o no funcionan adecuadamente en los generadores de sitios estáticos.
+
 La mayoría de objetos que vamos a describir, se nombrarán colectivamente como “tarjetas”. La metáfora de las tarjetas se utiliza en Tutors como una característica visual simple para representar una variedad de recursos de aprendizaje. En general, el contenido de una tarjeta se extrae de lo siguiente:
 
 - Un archivo Markdown que contiene el título del recurso y un breve resumen.
