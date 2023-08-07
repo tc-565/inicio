@@ -104,15 +104,18 @@ Usando ***, ___ o --- es posible insertar una línea horizontal en el documento.
 ---
 
 ## Títulos
-Para hacer títulos, se pueden colocar de uno a cuatro signos numerales (#) seguidos de un espacio y el texto del título, resultando respectivamente en un título de menor jerarquía.
+Para hacer títulos, se pueden colocar de uno a seis signos numerales (#) seguidos de un espacio y el texto del título, resultando respectivamente en un título de menor jerarquía.
 ~~~markdown
 	# Título 1
-	## Título 1
-	### Título 1
-	#### Título 1
-	##### Título 1
+	## Título 2
+	### Título 3
+	#### Título 4
+	##### Título 5
+	###### Título 6
 ~~~
 # Título 1
-## Título 1
-### Título 1
-#### Título 1
+## Título 2
+### Título 3
+#### Título 4
+##### Título 5
+###### Título 6

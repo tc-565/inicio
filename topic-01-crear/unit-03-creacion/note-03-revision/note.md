@@ -6,6 +6,8 @@ icon:
 # Solicitar adición de curso en el sitio principal
 Para incorporar su curso al sitio principal
 
+[[toc]]
+
 ## Aspectos a revisar de parte del usuario
 Antes de solicitar la revisión de su curso para ser incluido en la página principal, cerciórese de cumplir con lo siguiente:
 * El curso se compila correctamente: En la sección de “Deployments" del repositorio no hay fallos.
