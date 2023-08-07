@@ -13,7 +13,7 @@ Se puede insertar texto matemático en la versión de Markdown de tutors gracias
 Para insertar texto matemático, delimítelo entre signos de dólar, `$x^2$`.
 
 ~~~latex
-f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+$f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi$
 ~~~
 
 $f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi$
