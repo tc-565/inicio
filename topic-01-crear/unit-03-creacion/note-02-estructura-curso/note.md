@@ -20,7 +20,7 @@ Los recursos de aprendizaje generalmente se nombran para que coincidan con el co
 
 El uso y visualización de las características descritas en este documento puede ser consultado en la [plantilla](https://github.com/tc-565/plantilla) y su [despliegue](https://tc-565.github.io/plantilla) respectivamente.
 
-[toc]
+[[toc]]
 
 ## Nombres de recursos
 
@@ -28,8 +28,9 @@ Los nombres de las carpetas transmiten el tipo de recurso de aprendizaje conteni
 
 |  Ejemplo                                                                                        | Fuente |
 | ----------------------------------------------------------------------------------------------- | ------------------------------------------  |
-| [Topic](https://tc-565.github.io/plantilla/topic-01-sin-unidades/index.html)                       | [Tópico de curso de nivel superior](https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades) |
-| [Unit](https://tc-565.github.io/plantilla/topic-02-con-unidades/index.html)                      | [Grupo de objetos de aprendizaje dentro de un Topic](https://github.com/tc-565/plantilla/tree/main/topic-02-con-unidades/unit-02-ordenado)|
+| [topic](https://tc-565.github.io/plantilla/topic-01-sin-unidades/index.html)                       | [Tópico de curso de nivel superior](https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades) |
+| [unit](https://tc-565.github.io/plantilla/topic-02-con-unidades/index.html)                      | [Grupo de objetos de aprendizaje dentro de un Topic](https://github.com/tc-565/plantilla/tree/main/topic-02-con-unidades/unit-02-ordenado)|
+| [side](https://tc-565.github.io/plantilla/topic-02-con-unidades/index.html)                      | [Grupo de objetos de aprendizaje dentro de un Topic](https://github.com/tc-565/plantilla/tree/main/topic-02-con-unidades/side-unit)|
 | [archive](https://tc-565.github.io/plantilla)                               | [Archivo zip descargable](https://github.com/tc-565/plantilla/tree/main/archive-01-logo)|
 | [github](https://tc-565.github.io/plantilla)                             | [Enlace a un repositorio de GitHub](https://github.com/tc-565/plantilla/tree/main/github-1-repositorio)|
 | [note](https://tc-565.github.io/plantilla/topic-01-sin-unidades/note-01-nota/index.html)       | [Página simple de texto escrito en Markdown](https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades/note-01-nota)|
@@ -163,6 +164,31 @@ Título de la unidad
 ~~~
 
 Una unidad puede contener cualquier número de recursos de aprendizaje.
+
+### Side
+
+La unidad ‘side' encapsula recursos de aprendizaje enmarcados con un título. Es equivalente a una unidad, pero es enmarcada de manera vertical.
+
+| Ejemplo del recurso | Visualización |
+| ---------------- | ------- | 
+| [side-unit](https://github.com/tc-565/plantilla/tree/main/topic-02-con-unidades/side-unit) | [Side unit](https://tc-565.github.io/plantilla/topic-02-con-unidades/index.html) |
+
+Se requiere un archivo .md:
+
+| Archivos| Propósito                                                    |
+| ------- | ------------------------------------------------------------ |
+| side.md | Título de la unidad. Se puede usar cualquier nombre de archivo, pero tiene que tener extensión .md |
+
+
+El título es especificado en una sola linea del archivo markdown:
+
+#### side.md
+
+~~~markdown
+Side unit
+~~~
+
+Una unidad ’side’ puede contener cualquier número de recursos de aprendizaje.
 
 ## Recursos de aprendizaje
 

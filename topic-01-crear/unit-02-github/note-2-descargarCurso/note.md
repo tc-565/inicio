@@ -6,7 +6,7 @@ icon:
 # Cómo descargar un curso
 Cómo descargar un curso compilado y sin compilar
 
-[toc]
+[[toc]]
 
 Una de las facilidades provistas por la manera en la que alojamos los cursos en GitHub es la posibilidad de descargar un curso como un sitio web local para uso offline, o la descarga del código fuente de un curso.
 

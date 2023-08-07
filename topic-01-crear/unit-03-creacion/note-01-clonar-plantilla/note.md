@@ -6,6 +6,8 @@ icon:
 # Clonación y edición de la plantilla de cursos
 Clone la plantilla para crear un nuevo curso
 
+[[toc]]
+
 ## Clonación de la plantilla
 Para crear un curso, primero se procederá a clonar la plantilla de cursos creada para tal fin. Siempre que vaya a crear un nuevo curso, repita este proceso, debido a que si empieza con un curso anteriormente como base, puede se estén omitiendo mejoras en el compilador por mencionar un caso. Estas mejoras sí se obtendrían de la plantilla.
 

@@ -6,6 +6,8 @@ icon:
 # Windows
 Instalación de Node.js en Windows
 
+[[toc]]
+
 ## Node.js 20
 Para garantizar el funcionamiento de las aplicaciones que se desean utilizar, se instalará la versión 20 de Node.js, ya que no se puede asegurar que sirvan en versiones posteriores.
 

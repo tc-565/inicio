@@ -1,7 +1,7 @@
 # Tablas y tablas de contenidos
 Tablas y tablas de contenidos en Markdown
 
-[toc]
+[[toc]]
 
 ## Tablas de contenidos
 Note que al digitar `[toc]` en una línea aparte, es posible insertar una tabla de contenidos únicamente para los títulos de nivel 2 (##). Esta es una característica particular de la variante de Markdown utilizada en este sitio.
