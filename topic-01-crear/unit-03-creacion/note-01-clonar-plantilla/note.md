@@ -11,7 +11,9 @@ Clone la plantilla para crear un nuevo curso
 ## Clonación de la plantilla
 Para crear un curso, primero se procederá a clonar la plantilla de cursos creada para tal fin. Siempre que vaya a crear un nuevo curso, repita este proceso, debido a que si empieza con un curso anteriormente como base, puede se estén omitiendo mejoras en el compilador por mencionar un caso. Estas mejoras sí se obtendrían de la plantilla.
 
-Al editar la plantilla **no borre el archivo `.gitignore` ni el directorio `.github`**. Además, **mantenga sin cambios el directorio `web-1-regresar`**. 
+Al editar la plantilla **no borre los archivos `.gitignore`, ni los directorios `.github`**. Además, **mantenga sin cambios el directorio `web-1-regresar`**.
+
+Tampoco borre los archivos **`course.md`**, **`course.png`**, **`properties.yaml`** ni la carpeta **`github-1-repositorio`**, pero sí podrá modificarlos posteriormente como lo indique la documentación y la plantilla.
 
 1. Ingrese a su cuenta de GitHub.
 2. Diríjase a [https://github.com/tc-565/plantilla](https://github.com/tc-565/plantilla).
