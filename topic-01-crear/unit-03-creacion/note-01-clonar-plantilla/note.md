@@ -16,7 +16,7 @@ Al editar la plantilla **no borre el archivo `.gitignore` ni el directorio `.git
 1. Ingrese a su cuenta de GitHub.
 2. Diríjase a [https://github.com/tc-565/plantilla](https://github.com/tc-565/plantilla).
 3. Presione el botón de color verde `Use this template`, y luego presione `Create a new repository`. ![](img/plantilla-clonar.png)
-4. Ahora estará en una ventana con título `Create a new repository`. Allí, seleccione la casilla `Include all branches`, escriba el nombre de su curso sin espacios, y escriba una breve descripción del curso. ![](img/crear-repo.png)
+4. Ahora estará en una ventana con título `Create a new repository`. Allí, seleccione la casilla `Include all branches` (si la casilla no aparece, ignórelo y continúe), escriba el nombre de su curso sin espacios, y escriba una breve descripción del curso. ![](img/crear-repo.png)
 5. Seleccione `Public`, y presione `Create repository`.
 
 ## Habilitación de GH-pages y compilación automática
