@@ -24,6 +24,7 @@ Ahora se va a proceder a habilitar GH-pages y GitHub actions, lo cual permitirá
 
 1. Diríjase a la pestaña settings dentro del nuevo repositorio, y en la barra horizontal seleccione `Actions` y luego `General`. Hacia abajo encontrará el título `Workflow permissions`. Bajo este título, seleccione la opción `Read and write permissions`, y más abajo presione `Save`.
 2. De esta manera, la compilación automática del sitio ya ha sido activada, y esta será ejecutada cada vez que se hagan cambios en los contenidos del curso.
+3. Finalmente, vaya a `Settings`, luego a `Pages` en la barra lateral izquierda, y bajo el título `Build and Deplyment`, bajo `Source` escoja la opción `Deploy from a branch`. Revise que en el título `branch` (está ubicado después de `source`) esta rama sea `gh-pages`. 
 
 ### Compilación manual
 1. La acción de compilación del sitio también puede ser accionada de manera manual. Para ello, diríjase a la pestaña `Actions`. Una vez allí, en la barra lateral, seleccione `Deploy`.

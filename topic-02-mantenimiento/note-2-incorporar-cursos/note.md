@@ -17,7 +17,7 @@ Cómo incorporar (por redirección) un curso al sitio web principal
 ## Copiar repositorio
 1. Proceda al repositorio provisto en el issue, y presione `Fork` cerca del extremo superior derecho. Esto creará una copia del repositorio bajo el usuario del TCU.
 2. En el repositorio copiado, siga las instrucciones bajo el título [Habilitación de GH-pages y compilación automática](https://tc-565.github.io/inicio/topic-01-crear/unit-03-creacion/note-01-clonar-plantilla/index.html#habilitación-de-gh-pages-y-compilación-automática).
-3. Puede que sea necesario ir a `Settings`, luego a `Pages` en la barra lateral izquierda, y bajo el título `Build and Deplyment`, bajo `source` escoja la opción `Deploy from a branch`. Revise que esta rama sea `gh-pages`. 
+3. Puede que sea necesario ir a `Settings`, luego a `Pages` en la barra lateral izquierda, y bajo el título `Build and Deplyment`, bajo `Source` escoja la opción `Deploy from a branch`. Revise que en el título `branch` (está ubicado después de `source`) esta rama sea `gh-pages`. 
 
 ## Agregar al sitio principal
 En [https://github.com/tc-565/inicio/tree/main/unit-01-material](https://github.com/tc-565/inicio/tree/main/unit-01-material) agregue el enlace donde se despliega el sitio web bajo el usuario del TCU (por ejemplo https://tc-565.github.io/nuevo-curso) como un elemento de tipo `web` (esto es descrito en [https://tc-565.github.io/inicio/topic-01-crear/unit-03-creacion/note-02-estructura-curso/index.html#web])(https://tc-565.github.io/inicio/topic-01-crear/unit-03-creacion/note-02-estructura-curso/index.html#web).
