@@ -35,7 +35,6 @@ Los nombres de las carpetas transmiten el tipo de recurso de aprendizaje conteni
 | [github](https://tc-565.github.io/plantilla)                             | [Enlace a un repositorio de GitHub](https://github.com/tc-565/plantilla/tree/main/github-1-repositorio)|
 | [note](https://tc-565.github.io/plantilla/topic-01-sin-unidades/note-01-nota/index.html)       | [Página simple de texto escrito en Markdown](https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades/note-01-nota)|
 | [paneltalk](https://tc-565.github.io/plantilla/topic-04-panel-talk/index.html)            | [Presentación en PDF de nivel superior](https://github.com/tc-565/plantilla/tree/main/topic-04-panel-talk)|
-| [paneltalk](https://tc-565.github.io/plantilla/paneltalk-01-presentacion/presentacion.pdf)            | [Presentación en PDF de nivel superior de pantalla completa](https://github.com/tc-565/plantilla/tree/main/paneltalk-01-presentacion)|
 | [panelnote](https://tc-565.github.io/plantilla/topic-03-panel-note/index.html)            | [Notas de pantalla completa](https://github.com/tc-565/plantilla/tree/main/topic-03-panel-note/unit) |
 | [talk](https://tc-565.github.io/plantilla/topic-01-sin-unidades//talk-01-presentacion/talk.pdf) | [Presentación estándar en formato PDF](https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades/talk-01-presentacion)|
 | [web](https://github.com/tc-565/plantilla/tree/main/unit-01-unidad)                       | [Enlace a un sitio externo](https://github.com/tc-565/plantilla/tree/main/unit-01-unidad/web-1-tcu) |
