@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutors</title>
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.1.4/dist/typography.min.css" />
+    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/default.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/light.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous"/>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@vime/core@^4/dist/vime/vime.esm.js"></script>
+  </head>
+
+  <body>
+    <div class="mx-auto px-3 antialiased bg-base-100 min-h-screen w-full 2xl:w-11/12" data-theme="light">
+  
+  <div class="p-3 shadow-lg bg-neutral text-neutral-content rounded-box nav-corner mb-1 justify-start z-40 flex mt-2">
+    
+  <div class="flex flex-row">
+    <div>
+      
+        <span class="iconify" data-icon="clarity:clone-solid" data-width="50" style="color:e2ac08;"></span>
+      
+    </div>
+    <div class="ml-4 flex-nowrap">
+      <h2 class="mr-4 font-bold"> Clonación y edición de la plantilla de cursos</h2>
+      <h2>
+        
+          Creación de cursos desde GitHub
+        
+      </h2>
+    </div>
+  </div>
+
+  </div>
+  <div class="flex flex-wrap lg:flex-nowrap mb-2">
+    
+  <div class="shadow-lg bg-neutral rounded-box nav-corner horizontal text-neutral-content text-sm breadcrumbs flex flex-auto content-center h-12">
+    <ul>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:home-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Material de apoyo TCU-565
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Cómo crear un curso
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+            Creación de cursos desde GitHub
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=#>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Clonación y edición de la plantilla de cursos
+          </span>
+          
+  </a>
+
+        </li>
+      
+    </ul>
+  </div>
+
+    
+  
+
+  </div>
+
+  
+
+  <div class="prose xl:max-w-4xl 2xl:max-w-5xl mx-auto p-2 m-2">
+    <h1 id="clonaci%C3%B3n-y-edici%C3%B3n-de-la-plantilla-de-cursos" tabindex="-1"><a class="header-anchor" href="#clonaci%C3%B3n-y-edici%C3%B3n-de-la-plantilla-de-cursos">Clonación y edición de la plantilla de cursos</a></h1>
+<p>Clone la plantilla para crear un nuevo curso</p>
+<p><div class="table-of-contents"><ul><li><a href="#clonaci%C3%B3n-y-edici%C3%B3n-de-la-plantilla-de-cursos">Clonación y edición de la plantilla de cursos</a><ul><li><a href="#clonaci%C3%B3n-de-la-plantilla">Clonación de la plantilla</a></li><li><a href="#habilitaci%C3%B3n-de-gh-pages-y-compilaci%C3%B3n-autom%C3%A1tica">Habilitación de GH-pages y compilación automática</a><ul><li><a href="#compilaci%C3%B3n-manual">Compilación manual</a></li><li><a href="#visualizar-el-sitio">Visualizar el sitio</a></li></ul></li><li><a href="#edici%C3%B3n-de-la-plantilla">Edición de la plantilla</a><ul><li><a href="#interfaz-de-github">Interfaz de GitHub</a></li><li><a href="#github-codespaces-(opcional)">GitHub Codespaces (Opcional)</a></li></ul></li></ul></li></ul></div></p>
+<h2 id="clonaci%C3%B3n-de-la-plantilla" tabindex="-1"><a class="header-anchor" href="#clonaci%C3%B3n-de-la-plantilla">Clonación de la plantilla</a></h2>
+<p>Para crear un curso, primero se procederá a clonar la plantilla de cursos creada para tal fin. Siempre que vaya a crear un nuevo curso, repita este proceso, debido a que si empieza con un curso anteriormente como base, puede se estén omitiendo mejoras en el compilador por mencionar un caso. Estas mejoras sí se obtendrían de la plantilla.</p>
+<p>Al editar la plantilla <strong>no borre los archivos <code>.gitignore</code>, ni los directorios <code>.github</code></strong>. Además, <strong>mantenga sin cambios el directorio <code>web-1-regresar</code></strong>.</p>
+<p>Tampoco borre los archivos <strong><code>course.md</code></strong>, <strong><code>course.png</code></strong>, <strong><code>properties.yaml</code></strong> ni la carpeta <strong><code>github-1-repositorio</code></strong>, pero sí podrá modificarlos posteriormente como lo indique la documentación y la plantilla.</p>
+<ol>
+<li>Ingrese a su cuenta de GitHub.</li>
+<li>Diríjase a <a href="https://github.com/tc-565/plantilla">https://github.com/tc-565/plantilla</a>.</li>
+<li>Presione el botón de color verde <code>Use this template</code>, y luego presione <code>Create a new repository</code>. <img src="img/plantilla-clonar.png" alt=""></li>
+<li>Ahora estará en una ventana con título <code>Create a new repository</code>. Allí, seleccione la casilla <code>Include all branches</code> (si la casilla no aparece, ignórelo y continúe), escriba el nombre de su curso sin espacios, y escriba una breve descripción del curso. <img src="img/crear-repo.png" alt=""></li>
+<li>Seleccione <code>Public</code>, y presione <code>Create repository</code>.</li>
+</ol>
+<h2 id="habilitaci%C3%B3n-de-gh-pages-y-compilaci%C3%B3n-autom%C3%A1tica" tabindex="-1"><a class="header-anchor" href="#habilitaci%C3%B3n-de-gh-pages-y-compilaci%C3%B3n-autom%C3%A1tica">Habilitación de GH-pages y compilación automática</a></h2>
+<p>Ahora se va a proceder a habilitar GH-pages y GitHub actions, lo cual permitirá la compilación del sitio web y visualización del mismo en la nube.</p>
+<ol>
+<li>Diríjase a la pestaña settings dentro del nuevo repositorio, y en la barra horizontal seleccione <code>Actions</code> y luego <code>General</code>. Hacia abajo encontrará el título <code>Workflow permissions</code>. Bajo este título, seleccione la opción <code>Read and write permissions</code>, y más abajo presione <code>Save</code>.</li>
+<li>De esta manera, la compilación automática del sitio ya ha sido activada, y esta será ejecutada cada vez que se hagan cambios en los contenidos del curso.</li>
+<li>Finalmente, vaya a <code>Settings</code>, luego a <code>Pages</code> en la barra lateral izquierda, y bajo el título <code>Build and Deplyment</code>, bajo <code>Source</code> escoja la opción <code>Deploy from a branch</code>. Revise que en el título <code>branch</code> (está ubicado después de <code>source</code>) esta rama sea <code>gh-pages</code>.</li>
+</ol>
+<h3 id="compilaci%C3%B3n-manual" tabindex="-1"><a class="header-anchor" href="#compilaci%C3%B3n-manual">Compilación manual</a></h3>
+<ol>
+<li>La acción de compilación del sitio también puede ser accionada de manera manual. Para ello, diríjase a la pestaña <code>Actions</code>. Una vez allí, en la barra lateral, seleccione <code>Deploy</code>.</li>
+<li>Ahora podrá ver una barra azul que hacia el final tiene un botón que dice <code>Run workflow</code>, presiónelo. Luego, asegúrese de que debajo de <code>Use workflow from</code>, diga <code>Branch: main</code>. Si es así, presione <code>Run workflow</code> para compilar el sitio de manera manual. <img src="img/accion-manual.png" alt=""></li>
+</ol>
+<h3 id="visualizar-el-sitio" tabindex="-1"><a class="header-anchor" href="#visualizar-el-sitio">Visualizar el sitio</a></h3>
+<p>Para visualizar el sitio, si su nombre de usuario es “emma01&quot;, y el nombre del curso que creó es “cursoAprendizaje”, basta dirigirse a https://emma01.github.io/cursoAprendizaje/ para ver el sitio web ya desplegado. Tome en cuenta que la compilación del sitio web en la nube no es inmediata, ya que se está haciendo uso de recursos computacionales compartidos.</p>
+<p>Alternativamente, puede dirigirse a la pestaña <code>Code</code>, y en la columna lateral derecha encontrará un título que dice <code>Deployments</code>, presiónelo. Allí encontrará el sitio web donde puede consultar su curso ya compilado.</p>
+<p><strong>Nota:</strong> es posible que por errores a la hora de crear un curso, este no se pueda compilar. Si este es el caso, en <code>Deployments</code> podrá ver que la última acción “Deploy” falló.</p>
+<h2 id="edici%C3%B3n-de-la-plantilla" tabindex="-1"><a class="header-anchor" href="#edici%C3%B3n-de-la-plantilla">Edición de la plantilla</a></h2>
+<p>Para poder adaptar la plantilla a sus necesidades, se requiere aprender como modificar y subir archivos en la nube.</p>
+<h3 id="interfaz-de-github" tabindex="-1"><a class="header-anchor" href="#interfaz-de-github">Interfaz de GitHub</a></h3>
+<p>Para editar los archivos de un curso desde GitHub, debe primero dirigirse a la pestaña <code>Code</code>.</p>
+<p>Además, verifique que debajo del nombre del curso donde aparece su foto de perfil diga <code>Main</code>, al lado de <code>branches</code> y <code>tags</code>.</p>
+<h4 id="editando-archivos-existentes" tabindex="-1"><a class="header-anchor" href="#editando-archivos-existentes">Editando archivos existentes</a></h4>
+<ol>
+<li>Seleccione el archivo que desea editar. <img src="img/editar-1.png" alt=""></li>
+<li>Una vez seleccionado, podrá ver justo encima del texto del archivo, una barra con distintos íconos. Presione el ícono con forma de lápiz.</li>
+<li>Edite el texto.</li>
+<li>Presione el botón verde <code>Commit Changes</code>. <img src="img/editar-2.png" alt=""></li>
+<li>Aparecerá una ventana que dice <code>Commit changes</code>. En ella, escriba palabras clave para los cambios que hizo bajo el título <code>Commit message</code>, y bajo <code>Extended description</code> escriba una descripción más detallada de los cambios si lo considera necesario.</li>
+<li>Presione el botón verde <code>Commit Changes</code>. <img src="img/editar-3-commit.png" alt=""></li>
+</ol>
+<h4 id="crear-archivos-desde-github" tabindex="-1"><a class="header-anchor" href="#crear-archivos-desde-github">Crear archivos desde GitHub</a></h4>
+<ol>
+<li>Proceda al directorio en el cual desea crear un nuevo archivo.</li>
+<li>Seleccione el botón <code>Add file</code>, y bajo él <code>Create new file</code>.</li>
+<li>Escriba un nombre y <strong>extensión</strong> para el archivo.</li>
+<li>Edite el texto del archivo.</li>
+<li>Presione el botón verde <code>Commit Changes</code>. <img src="img/editar-2.png" alt=""></li>
+<li>Aparecerá una ventana que dice <code>Commit changes</code>. En ella, escriba palabras clave para los cambios que hizo bajo el título <code>Commit message</code>, y bajo <code>Extended description</code> escriba una descripción más detallada de los cambios si lo considera necesario.</li>
+<li>Presione el botón verde <code>Commit Changes</code>. <img src="img/editar-3-commit.png" alt=""></li>
+</ol>
+<h4 id="borrar-archivos-desde-github" tabindex="-1"><a class="header-anchor" href="#borrar-archivos-desde-github">Borrar archivos desde GitHub</a></h4>
+<ol>
+<li>Seleccione el archivo o folder que desea eliminar.</li>
+<li>Una vez en él, presione el botón con tres puntos en la parte superior derecha.</li>
+<li>Seleccione el texto en rojo <code>Delete directory</code> o <code>Delete file</code> según corresponda.</li>
+<li>Aparecerá una ventana que dice <code>Commit changes</code>. En ella, escriba palabras clave para los cambios que hizo, puede además escribir una descripción más detallada de los cambios si lo considera necesario.</li>
+<li>Presione el botón verde <code>Commit Changes</code>.</li>
+</ol>
+<h4 id="subiendo-archivos-desde-la-computadora" tabindex="-1"><a class="header-anchor" href="#subiendo-archivos-desde-la-computadora">Subiendo archivos desde la computadora</a></h4>
+<ol>
+<li>Proceda al directorio en el cual desea subir un nuevo archivo.</li>
+<li>Seleccione el botón <code>Add file</code>, y bajo él <code>Upload files</code>.</li>
+<li>Arrastre los archivos que desea subir, o presione <code>choose your files</code> para escogerlo con el gestionador de archivos de su sistema operativo.</li>
+<li>Abajo verá un rectángulo que dice <code>Commit changes</code>. En él, escriba palabras clave para los cambios que hizo, puede además escribir una descripción más detallada de los cambios si lo considera necesario.</li>
+<li>Presione el botón verde <code>Commit Changes</code>.</li>
+</ol>
+<h3 id="github-codespaces-(opcional)" tabindex="-1"><a class="header-anchor" href="#github-codespaces-(opcional)">GitHub Codespaces (Opcional)</a></h3>
+<p>Esta opción de edición consiste en abrir un editor de texto en el navegador dentro de GitHub, similar al popular editor de texto Visual Studio Code. Este ambiente se llama GitHub Codespaces. Cuenta con algunas limitaciones, por ejemplo una restricción mensual de horas de uso del mismo.</p>
+<ol>
+<li>Presione el botón verde <code>Code</code>.</li>
+<li>En la ventana que se desplegó, presione la pestaña <code>Codespaces</code>.</li>
+<li>Presione el botón <code>Create codespace on main</code>.</li>
+<li>Allí podrá ver los contenidos de su curso, seleccionarlos y editarlos in situ.</li>
+<li>Para que los cambios tomen efecto y no se pierdan, seleccione el tercer ícono en la barra lateral izquierda que parece una bifurcación.</li>
+<li>Presione donde dice <code>Message</code>, y escriba palabras clave para los cambios que hizo. Abajo, mueva el puntero hacia los archivos que modificó, y presione el símbolo + que aparece al extremo de cada uno de ellos. <strong>Nota:</strong> no se espere a tener muchos cambios antes de hacer un commit. Sea ordenado, haga cambios relacionados entre sí en un mismo commit.</li>
+<li>Presione el botón azul que dice commit.</li>
+</ol>
+<p><strong>Importante:</strong> para salir de GitHub Codespaces no basta con cerrar la ventana del navegador, ya que de lo contrario estará agotando en vano su tiempo de uso mensual.</p>
+<ol>
+<li>Seleccione el ícono de tres líneas horizontales en la columna del extremo izquierdo.</li>
+<li>Seleccione <code>My Codespaces</code>.</li>
+<li>En la nueva ventana, ubique el Codespace que estaba utilizando, y seleccione los tres puntos en su extremo derecho.</li>
+<li>Seleccione <code>Stop Codespace</code>.</li>
+</ol>
+
+  </div>
+
+</div>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutors</title>
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.1.4/dist/typography.min.css" />
+    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/default.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/light.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous"/>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@vime/core@^4/dist/vime/vime.esm.js"></script>
+  </head>
+
+  <body>
+    <div class="mx-auto px-3 antialiased bg-base-100 min-h-screen w-full 2xl:w-11/12" data-theme="light">
+  
+  <div class="p-3 shadow-lg bg-neutral text-neutral-content rounded-box nav-corner mb-1 justify-start z-40 flex mt-2">
+    
+  <div class="flex flex-row">
+    <div>
+      
+        <span class="iconify" data-icon="ph:archive" data-width="50" style="color:e2ac08;"></span>
+      
+    </div>
+    <div class="ml-4 flex-nowrap">
+      <h2 class="mr-4 font-bold"> Adaptación correcta de material</h2>
+      <h2>
+        
+          Creación de cursos desde GitHub
+        
+      </h2>
+    </div>
+  </div>
+
+  </div>
+  <div class="flex flex-wrap lg:flex-nowrap mb-2">
+    
+  <div class="shadow-lg bg-neutral rounded-box nav-corner horizontal text-neutral-content text-sm breadcrumbs flex flex-auto content-center h-12">
+    <ul>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:home-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Material de apoyo TCU-565
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Cómo crear un curso
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+            Creación de cursos desde GitHub
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=#>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Adaptación correcta de material
+          </span>
+          
+  </a>
+
+        </li>
+      
+    </ul>
+  </div>
+
+    
+  
+
+  </div>
+
+  
+
+  <div class="prose xl:max-w-4xl 2xl:max-w-5xl mx-auto p-2 m-2">
+    <h1 id="adaptaci%C3%B3n-correcta-de-material" tabindex="-1"><a class="header-anchor" href="#adaptaci%C3%B3n-correcta-de-material">Adaptación correcta de material</a></h1>
+<p>Adaptación correcta de <code>.tex</code>, presentaciones y documentos de texto</p>
+<h2 id=".tex" tabindex="-1"><a class="header-anchor" href="#.tex">.tex</a></h2>
+<p>Para adaptar un documento <code>.tex</code> en el sitio web, adapte el texto en notas markdown adecuadamente, adjunte el código fuente (esto incluye todos los archivos auxiliares, imágenes, macros, etc…) en un objeto <code>archive</code> y el archivo PDF compilado en un objeto <code>paneltalk</code> o <code>talk</code>.</p>
+<h2 id="presentaciones-y-beamer" tabindex="-1"><a class="header-anchor" href="#presentaciones-y-beamer">Presentaciones y beamer</a></h2>
+<p>Para presentaciones, convierta la presentación a PDF, e incluya ambos documentos, el PDF y la presentación en un objeto <code>paneltalk</code> o <code>talk</code>. En caso de ser beamer, incluya el código fuente en un objeto <code>archive</code> y el archivo PDF compilado en el objeto <code>paneltalk</code> o <code>talk</code>.</p>
+<h2 id="otros-documentos-de-texto-(word)" tabindex="-1"><a class="header-anchor" href="#otros-documentos-de-texto-(word)">Otros documentos de texto (Word)</a></h2>
+<p>Adapte el texto en notas markdown, e incluya el archivo de texto original como un archivo auxiliar en la primera de las notas. Recuerde mencionar este archivo en markdown con la sintaxis para adjuntar archivos.</p>
+
+  </div>
+
+</div>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  </body>
+</html>

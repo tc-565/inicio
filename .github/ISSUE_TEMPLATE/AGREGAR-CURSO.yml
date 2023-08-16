@@ -1,0 +1,13 @@
+name: Solicitar adición de curso en el sitio principal
+description: Solicite la adición de un curso
+title: "MODIFICAR - NOMBRE DEL CURSO"
+
+body:
+  - type: textarea
+    id: app-name
+    attributes:
+      label: Datos de sitio web solicitados en la documentación
+      placeholder:
+    validations:
+      required: true
+ 

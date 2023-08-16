@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutors</title>
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.1.4/dist/typography.min.css" />
+    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/default.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/light.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous"/>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@vime/core@^4/dist/vime/vime.esm.js"></script>
+  </head>
+
+  <body>
+    <div class="mx-auto px-3 antialiased bg-base-100 min-h-screen w-full 2xl:w-11/12" data-theme="light">
+  
+  <div class="p-3 shadow-lg bg-neutral text-neutral-content rounded-box nav-corner mb-1 justify-start z-40 flex mt-2">
+    
+  <div class="flex flex-row">
+    <div>
+      
+        <span class="iconify" data-icon="material-symbols:rule" data-width="50" style="color:e2ac08;"></span>
+      
+    </div>
+    <div class="ml-4 flex-nowrap">
+      <h2 class="mr-4 font-bold"> Aspectos generales</h2>
+      <h2>
+        
+           Mantenimiento del sitio web
+        
+      </h2>
+    </div>
+  </div>
+
+  </div>
+  <div class="flex flex-wrap lg:flex-nowrap mb-2">
+    
+  <div class="shadow-lg bg-neutral rounded-box nav-corner horizontal text-neutral-content text-sm breadcrumbs flex flex-auto content-center h-12">
+    <ul>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:home-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Material de apoyo TCU-565
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Mantenimiento del sitio web
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=#>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Aspectos generales
+          </span>
+          
+  </a>
+
+        </li>
+      
+    </ul>
+  </div>
+
+    
+  
+
+  </div>
+
+  
+
+  <div class="prose xl:max-w-4xl 2xl:max-w-5xl mx-auto p-2 m-2">
+    <h1 id="aspectos-generales" tabindex="-1"><a class="header-anchor" href="#aspectos-generales">Aspectos generales</a></h1>
+<p>Aspectos generales de mantenimiento</p>
+<p><div class="table-of-contents"><ul><li><a href="#aspectos-generales">Aspectos generales</a><ul><li><a href="#tutors">tutors</a></li><li><a href="#%C2%BFc%C3%B3mo-funciona-la-compilaci%C3%B3n-autom%C3%A1tica-del-sitio-web-en-github%3F">¿Cómo funciona la compilación automática del sitio web en GitHub?</a></li><li><a href="#github-pro-y-el-despliegue-privado-del-sitio">GitHub PRO y el despliegue privado del sitio</a></li><li><a href="#modificaciones-de-la-plantilla">Modificaciones de la plantilla</a></li></ul></li></ul></div></p>
+<h2 id="tutors" tabindex="-1"><a class="header-anchor" href="#tutors">tutors</a></h2>
+<p>El sitio web y la generación de cursos se apoya en los paquetes de código abierto <a href="https://github.com/tutors-sdk/tutors">tutors</a> para la generación de sitios web educativos. En particular se utiliza la herramienta de generación de sitios web estáticos, antiguamente <a href="https://www.npmjs.com/package/tutors-html">tutors-html</a>, y ahora <a href="https://www.npmjs.com/package/tutors-publish-html">tutors-publish-html</a>.</p>
+<p>Este software es desarrollado por personas en su tiempo libre sin ánimo de lucro, si se encuentran problemas de compilación con el contenido de un curso y desea comunicarlo al resto de la comunidad, sea respetuoso, consulte el <a href="https://github.com/tutors-sdk/tutors/blob/main/CODE_OF_CONDUCT.md">código de conducta</a>, y provea la información técnica más completa posible.</p>
+<p>El trabajo y colaboración con los contribuidores del proyecto tutors para la identificación y solución de errores fue fundamental para hacer posible la existencia de este sitio web. Recuerde que las personas que trabajan en él no son remuneradas por ello.</p>
+<p>Se motiva a contribuir al desarrollo del proyecto del cual depende este sitio.</p>
+<h2 id="%C2%BFc%C3%B3mo-funciona-la-compilaci%C3%B3n-autom%C3%A1tica-del-sitio-web-en-github%3F" tabindex="-1"><a class="header-anchor" href="#%C2%BFc%C3%B3mo-funciona-la-compilaci%C3%B3n-autom%C3%A1tica-del-sitio-web-en-github%3F">¿Cómo funciona la compilación automática del sitio web en GitHub?</a></h2>
+<p>Como parte de este proyecto, se empleó un script de GitHub Actions que permite la inicialización de un contenedor de Ubuntu, se establece una versión de Node a utilizar, se instala el compilador de tutors, y se ejecuta.</p>
+<p>Luego en una rama aparte, se hace un commit con los contenidos del curso compilado. Esta rama es la que luego es desplegada en GitHub pages.</p>
+<p>Estas acciones de compilación y despliegue no son inmediatas, pues deben esperar a ser ejecutadas dentro de recursos computacionales compartidos en la nube.</p>
+<p>Este script puede ser consultado en <a href="https://github.com/tc-565/plantilla/blob/main/.github/workflows/deploy.yml">https://github.com/tc-565/plantilla/blob/main/.github/workflows/deploy.yml</a>.</p>
+<p><strong>Importante:</strong> puede que este script se deba actualizar en el futuro por la versión de Node y del compilador de cursos. De tener que hacerlo,</p>
+<ol>
+<li>Cerciórese de que la versión de Node por la cual sustituye a la anterior sea una versión LTS, y que no genere problemas de compilación.</li>
+<li>Cerciórese de que la nueva versión del compilador compile los sitios web correctamente, y tenga un ojo abierto a las regresiones, revise cuidadosamente.</li>
+<li>Si hace cualquiera de los cambios anteriores, actualice correspondientemente los apartados avanzados de documentación acerca de ‘Cómo crear un curso’.</li>
+</ol>
+<h2 id="github-pro-y-el-despliegue-privado-del-sitio" tabindex="-1"><a class="header-anchor" href="#github-pro-y-el-despliegue-privado-del-sitio">GitHub PRO y el despliegue privado del sitio</a></h2>
+<p>Para mantener el sitio desplegado en la web, sea en la dirección provista por GitHub o una personalizada, mientras se tiene el repositorio en modo privado (sin acceso para usuarios sin autorización), se debe aplicar y mantener una suscripción a GitHub PRO.</p>
+<p>Como funcionarios de la Universidad de Costa Rica, se puede asociar la cuenta con el sitio web al correo institucional correspondiente, y aplicar a los beneficios educativos de GitHub en <a href="https://education.github.com/benefits">https://education.github.com/benefits</a>. Se deberá proveer información fehaciente que pruebe su asociación activa con la Universidad de Costa Rica.</p>
+<p>Los beneficios de estudiante tienen un tiempo de expiración de 1 a 2 años, plazo tras el cual deben ser renovados de la misma manera.</p>
+<h2 id="modificaciones-de-la-plantilla" tabindex="-1"><a class="header-anchor" href="#modificaciones-de-la-plantilla">Modificaciones de la plantilla</a></h2>
+<p>Si se hacen modificaciones en la plantilla de cursos, cerciórese de reciprocarlos en todos los cursos bajo el usuario del TCU. Estos cambios pueden ser hechos por un estudiante mediante pull requests, pero deberán ser aprobados en GitHub por el encargado de la cuenta del TCU.</p>
+<p>Las modificaciones a reciprocar corresponden a los archivos <a href="https://github.com/tc-565/plantilla/blob/main/.github/workflows/deploy.yml"><code>.github/workflows/deploy.yml</code></a>, <a href="https://github.com/tc-565/plantilla/blob/main/.gitignore"><code>.gitignore</code></a>.</p>
+
+  </div>
+
+</div>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  </body>
+</html>

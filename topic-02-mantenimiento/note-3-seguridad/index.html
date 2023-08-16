@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutors</title>
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.1.4/dist/typography.min.css" />
+    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/default.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/light.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous"/>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@vime/core@^4/dist/vime/vime.esm.js"></script>
+  </head>
+
+  <body>
+    <div class="mx-auto px-3 antialiased bg-base-100 min-h-screen w-full 2xl:w-11/12" data-theme="light">
+  
+  <div class="p-3 shadow-lg bg-neutral text-neutral-content rounded-box nav-corner mb-1 justify-start z-40 flex mt-2">
+    
+  <div class="flex flex-row">
+    <div>
+      
+        <span class="iconify" data-icon="mdi:security" data-width="50" style="color:e2ac08;"></span>
+      
+    </div>
+    <div class="ml-4 flex-nowrap">
+      <h2 class="mr-4 font-bold"> Elementos de seguridad</h2>
+      <h2>
+        
+           Mantenimiento del sitio web
+        
+      </h2>
+    </div>
+  </div>
+
+  </div>
+  <div class="flex flex-wrap lg:flex-nowrap mb-2">
+    
+  <div class="shadow-lg bg-neutral rounded-box nav-corner horizontal text-neutral-content text-sm breadcrumbs flex flex-auto content-center h-12">
+    <ul>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:home-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Material de apoyo TCU-565
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Mantenimiento del sitio web
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=#>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Elementos de seguridad
+          </span>
+          
+  </a>
+
+        </li>
+      
+    </ul>
+  </div>
+
+    
+  
+
+  </div>
+
+  
+
+  <div class="prose xl:max-w-4xl 2xl:max-w-5xl mx-auto p-2 m-2">
+    <h1 id="elementos-de-seguridad" tabindex="-1"><a class="header-anchor" href="#elementos-de-seguridad">Elementos de seguridad</a></h1>
+<p>Aspectos de seguridad del sitio web y los repositorios</p>
+<p><div class="table-of-contents"><ul><li><a href="#elementos-de-seguridad">Elementos de seguridad</a><ul><li><a href="#protecciones-de-rama">Protecciones de rama</a></li><li><a href="#incorporaci%C3%B3n-de-estudiante-colaboradores">Incorporación de estudiante colaboradores</a></li></ul></li></ul></div></p>
+<h2 id="protecciones-de-rama" tabindex="-1"><a class="header-anchor" href="#protecciones-de-rama">Protecciones de rama</a></h2>
+<p>Como medida de seguridad para evitar la edición no avalada del sitio web principal, se habilitaron las protecciones de rama como se puede visualizar en el siguiente PDF adjuntado. No se recomienda deshabilitar ni debilitar dichas reglas.</p>
+<ul>
+<li><a href="archivos/ruleset.pdf">PDF con referencia de protecciones de rama</a></li>
+</ul>
+<p>En dichas reglas se estableció un requisito de 10 aprobaciones para poder incorporar un Pull Request, para así evitar colusión para la modificación indebida del sitio web. Este requisito puede ser omitido por la cuenta del TCU.</p>
+<h2 id="incorporaci%C3%B3n-de-estudiante-colaboradores" tabindex="-1"><a class="header-anchor" href="#incorporaci%C3%B3n-de-estudiante-colaboradores">Incorporación de estudiante colaboradores</a></h2>
+<p>Si el <a href="https://github.com/tc-565/inicio">repositorio</a> del sitio web principal es privado, para que este sea visible por los estudiantes para poder subir un issue hay dos opciones:</p>
+<ul>
+<li>(Más seguro) Que los estudiantes provean los enlaces de sus repositorios por un medio distinto a GitHub, y que no tengan acceso al código fuente del sitio <a href="https://github.com/tc-565/inicio">https://github.com/tc-565/inicio</a>.</li>
+<li>Incorporar a los estudiantes como colaboradores con bajos privilegios en el <a href="https://github.com/tc-565/inicio">repositorio</a>.
+<ol>
+<li>En el repositorio del sitio web principal, vaya a <code>Settings</code>.</li>
+<li>En la barra lateral seleccione <code>Collaborators</code>.</li>
+<li>Seleccione <code>Add people</code>.</li>
+<li>Digite el correo institucional del estudiante que desea incluir, ya que este debió haber creado su cuenta de GitHub con dicho correo, o asociar el correo a su cuenta existente.</li>
+</ol>
+</li>
+</ul>
+<p>No hay ningún otro motivo para darle acceso y privilegios adicionales a un estudiante en el repositorio del sitio web principal.</p>
+
+  </div>
+
+</div>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  </body>
+</html>

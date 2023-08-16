@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutors</title>
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.1.4/dist/typography.min.css" />
+    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/default.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/light.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous"/>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@vime/core@^4/dist/vime/vime.esm.js"></script>
+  </head>
+
+  <body>
+    <div class="mx-auto px-3 antialiased bg-base-100 min-h-screen w-full 2xl:w-11/12" data-theme="light">
+  
+  <div class="p-3 shadow-lg bg-neutral text-neutral-content rounded-box nav-corner mb-1 justify-start z-40 flex mt-2">
+    
+  <div class="flex flex-row">
+    <div>
+      
+        <img loading="lazy" class="h-12" src="./note.png" alt=" Líneas, bloques de código y citas"/>
+      
+    </div>
+    <div class="ml-4 flex-nowrap">
+      <h2 class="mr-4 font-bold"> Líneas, bloques de código y citas</h2>
+      <h2>
+        
+          Preliminares: Markdown
+        
+      </h2>
+    </div>
+  </div>
+
+  </div>
+  <div class="flex flex-wrap lg:flex-nowrap mb-2">
+    
+  <div class="shadow-lg bg-neutral rounded-box nav-corner horizontal text-neutral-content text-sm breadcrumbs flex flex-auto content-center h-12">
+    <ul>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:home-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Material de apoyo TCU-565
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Cómo crear un curso
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+            Preliminares: Markdown
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=#>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Líneas, bloques de código y citas
+          </span>
+          
+  </a>
+
+        </li>
+      
+    </ul>
+  </div>
+
+    
+  
+
+  </div>
+
+  
+
+  <div class="prose xl:max-w-4xl 2xl:max-w-5xl mx-auto p-2 m-2">
+    <h1 id="l%C3%ADneas%2C-bloques-de-c%C3%B3digo-y-citas" tabindex="-1"><a class="header-anchor" href="#l%C3%ADneas%2C-bloques-de-c%C3%B3digo-y-citas">Líneas, bloques de código y citas</a></h1>
+<p>Inserción de código en línea y bloques con un ambiente especial</p>
+<h2 id="l%C3%ADneas-de-c%C3%B3digo" tabindex="-1"><a class="header-anchor" href="#l%C3%ADneas-de-c%C3%B3digo">Líneas de código</a></h2>
+<p>Para escribir código en una línea, hay que delimitarlo con los caracteres ``.</p>
+<pre class="hljs"><code>`` print(‘Hola mundo’)``
+</code></pre>
+<p><code> print(‘Hola mundo’)</code></p>
+<h2 id="bloques-de-c%C3%B3digo" tabindex="-1"><a class="header-anchor" href="#bloques-de-c%C3%B3digo">Bloques de código</a></h2>
+<p>Para escribir un bloque de código, se delimitan las líneas con ~~~, donde en la parte superior se escribe ~~~nombre_del_lenguaje.</p>
+<pre class="hljs"><code>n = <span class="hljs-number">10</span>
+num1 = <span class="hljs-number">0</span>
+num2 = <span class="hljs-number">1</span>
+next_number = num2 
+count = <span class="hljs-number">1</span>
+ 
+<span class="hljs-keyword">while</span> count &lt;= n:
+    <span class="hljs-built_in">print</span>(next_number, end=<span class="hljs-string">&quot; &quot;</span>)
+    count += <span class="hljs-number">1</span>
+    num1, num2 = num2, next_number
+    next_number = num1 + num2
+<span class="hljs-built_in">print</span>()
+</code></pre>
+<h2 id="citas" tabindex="-1"><a class="header-anchor" href="#citas">Citas</a></h2>
+<p>Usando el caracter &gt; al inicio de una línea, es posible hacer una cita de texto.</p>
+<pre class="hljs"><code><span class="hljs-quote">&gt; Texto citado</span>
+<span class="hljs-quote">&gt;
+&gt; Continuación de cita</span>
+</code></pre>
+<blockquote>
+<p>Texto citado</p>
+<p>Continuación de cita</p>
+</blockquote>
+
+  </div>
+
+</div>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutors</title>
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.1.4/dist/typography.min.css" />
+    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/default.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/light.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous"/>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@vime/core@^4/dist/vime/vime.esm.js"></script>
+  </head>
+
+  <body>
+    <div class="mx-auto px-3 antialiased bg-base-100 min-h-screen w-full 2xl:w-11/12" data-theme="light">
+  
+  <div class="p-3 shadow-lg bg-neutral text-neutral-content rounded-box nav-corner mb-1 justify-start z-40 flex mt-2">
+    
+  <div class="flex flex-row">
+    <div>
+      
+        <span class="iconify" data-icon="ri:windows-fill" data-width="50" style="color:e2ac08;"></span>
+      
+    </div>
+    <div class="ml-4 flex-nowrap">
+      <h2 class="mr-4 font-bold"> Windows</h2>
+      <h2>
+        
+          Avanzado: Instalación de GIT y GitHub Desktop
+        
+      </h2>
+    </div>
+  </div>
+
+  </div>
+  <div class="flex flex-wrap lg:flex-nowrap mb-2">
+    
+  <div class="shadow-lg bg-neutral rounded-box nav-corner horizontal text-neutral-content text-sm breadcrumbs flex flex-auto content-center h-12">
+    <ul>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:home-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Material de apoyo TCU-565
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Cómo crear un curso
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+            Avanzado: Instalación de GIT y GitHub Desktop
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=#>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Windows
+          </span>
+          
+  </a>
+
+        </li>
+      
+    </ul>
+  </div>
+
+    
+  
+
+  </div>
+
+  
+
+  <div class="prose xl:max-w-4xl 2xl:max-w-5xl mx-auto p-2 m-2">
+    <h1 id="windows" tabindex="-1"><a class="header-anchor" href="#windows">Windows</a></h1>
+<p>Instalación de Git y GitHub Desktop en Windows</p>
+<p><div class="table-of-contents"><ul><li><a href="#windows">Windows</a><ul><li><a href="#git">Git</a></li><li><a href="#paso-1%3A-descargar-el-instalador-m%C3%A1s-reciente-de-git-para-windows">Paso 1: Descargar el instalador más reciente de Git para Windows</a></li><li><a href="#paso-2%3A-iniciar-el-instalador-de-git">Paso 2: Iniciar el instalador de Git</a></li><li><a href="#paso-3%3A-abrir-un-command-prompt-o-git-bash">Paso 3: Abrir un Command Prompt o Git Bash</a></li><li><a href="#paso-4%3A-configurar-el-nombre-de-usuario-y-correo-electr%C3%B3nico">Paso 4: Configurar el nombre de usuario y correo electrónico</a></li><li><a href="#github-desktop">GitHub Desktop</a></li></ul></li><li><a href="#gu%C3%ADa-de-instalaci%C3%B3n-de-github-desktop-en-windows">Guía de instalación de GitHub Desktop en Windows</a></li></ul></div></p>
+<h2 id="git" tabindex="-1"><a class="header-anchor" href="#git">Git</a></h2>
+<h2 id="paso-1%3A-descargar-el-instalador-m%C3%A1s-reciente-de-git-para-windows" tabindex="-1"><a class="header-anchor" href="#paso-1%3A-descargar-el-instalador-m%C3%A1s-reciente-de-git-para-windows">Paso 1: Descargar el instalador más reciente de Git para Windows</a></h2>
+<p>Descargue el instalador más reciente de Git para Windows en el sitio web oficial <a href="https://gitforwindows.org">https://gitforwindows.org</a>.</p>
+<h2 id="paso-2%3A-iniciar-el-instalador-de-git" tabindex="-1"><a class="header-anchor" href="#paso-2%3A-iniciar-el-instalador-de-git">Paso 2: Iniciar el instalador de Git</a></h2>
+<p>Una vez que hayas descargado el instalador, inícielo haciendo doble clic en el archivo descargado. Consecuentemente, podrá ver la pantalla del asistente de configuración de Git. Siga las instrucciones de “Next” y “Finish” para completar la instalación. Si desconoce lo que hace alguna de las opciones que se le dan, proceda con las configuraciones predeterminadas.</p>
+<h2 id="paso-3%3A-abrir-un-command-prompt-o-git-bash" tabindex="-1"><a class="header-anchor" href="#paso-3%3A-abrir-un-command-prompt-o-git-bash">Paso 3: Abrir un Command Prompt o Git Bash</a></h2>
+<p>Después de instalar Git, abra el Command Prompt (Símbolo del sistema) o Git Bash si durante la instalación seleccionó no utilizar Git desde el Command Prompt de Windows.</p>
+<h2 id="paso-4%3A-configurar-el-nombre-de-usuario-y-correo-electr%C3%B3nico" tabindex="-1"><a class="header-anchor" href="#paso-4%3A-configurar-el-nombre-de-usuario-y-correo-electr%C3%B3nico">Paso 4: Configurar el nombre de usuario y correo electrónico</a></h2>
+<p>Configure su nombre de usuario y correo electrónico de Git utilizando los siguientes comandos, reemplazando el nombre con el suyo. Estos detalles estarán asociados con los commits que vaya a crear:</p>
+<pre class="hljs"><code>$ git config --global user.name <span class="hljs-string">&quot;Nombre&quot;</span>
+$ git config --global user.email <span class="hljs-string">&quot;correo@example.com&quot;</span>
+</code></pre>
+<h2 id="github-desktop" tabindex="-1"><a class="header-anchor" href="#github-desktop">GitHub Desktop</a></h2>
+<p>Para correr GitHub Desktop ocupará una computadora con una versión de Windows de 64-bits, cualquier computadora reciente cumplirá con este requisito.</p>
+<h1 id="gu%C3%ADa-de-instalaci%C3%B3n-de-github-desktop-en-windows" tabindex="-1"><a class="header-anchor" href="#gu%C3%ADa-de-instalaci%C3%B3n-de-github-desktop-en-windows">Guía de instalación de GitHub Desktop en Windows</a></h1>
+<ol>
+<li>
+<p>Visite la página de <a href="https://desktop.github.com/">descarga</a> de GitHub Desktop.</p>
+</li>
+<li>
+<p>Haga clic en el botón de Descargar para Windows.</p>
+</li>
+<li>
+<p>En la carpeta “Descargas” de su computadora, haga doble clic en el archivo de configuración de GitHub Desktop.</p>
+</li>
+<li>
+<p>Una vez que la instalación esté completa, GitHub Desktop se abrirá automáticamente.</p>
+</li>
+</ol>
+
+  </div>
+
+</div>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  </body>
+</html>
