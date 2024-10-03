@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutors</title>
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.1.4/dist/typography.min.css" />
+    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/railscasts.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/default.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/light.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous"/>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@vime/core@^4/dist/vime/vime.esm.js"></script>
+  </head>
+
+  <body>
+    <div class="mx-auto px-3 antialiased bg-base-100 min-h-screen w-full 2xl:w-11/12" data-theme="light">
+  
+  <div class="p-3 shadow-lg bg-neutral text-neutral-content rounded-box nav-corner mb-1 justify-start z-40 flex mt-2">
+    
+  <div class="flex flex-row">
+    <div>
+      
+        <span class="iconify" data-icon="simple-icons:moleculer" data-width="50" style="color:e2ac08;"></span>
+      
+    </div>
+    <div class="ml-4 flex-nowrap">
+      <h2 class="mr-4 font-bold"> Elementos de creación de cursos</h2>
+      <h2>
+        
+          Creación de cursos desde GitHub
+        
+      </h2>
+    </div>
+  </div>
+
+  </div>
+  <div class="flex flex-wrap lg:flex-nowrap mb-2">
+    
+  <div class="shadow-lg bg-neutral rounded-box nav-corner horizontal text-neutral-content text-sm breadcrumbs flex flex-auto content-center h-12">
+    <ul>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:home-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Material de apoyo TCU-565
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Cómo crear un curso
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=../../index.html>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+            Creación de cursos desde GitHub
+          </span>
+          
+  </a>
+
+        </li>
+      
+        
+        <li class="ml-2">
+          
+            
+  
+    <div>
+    
+        <span class="mx-2 iconify" data-icon="fluent:bookmark-24-filled" data-height="20" style="color:#37919b"></span>
+      </div>
+      
+
+          
+          
+  
+    
+  
+  <a href=#>
+  
+          <span class="hidden text-xs lg:block lg:pl-2">
+             Elementos de creación de cursos
+          </span>
+          
+  </a>
+
+        </li>
+      
+    </ul>
+  </div>
+
+    
+  
+
+  </div>
+
+  
+
+  <div class="prose xl:max-w-4xl 2xl:max-w-5xl mx-auto p-2 m-2">
+    <h1 id="elementos-de-creaci%C3%B3n-de-cursos" tabindex="-1"><a class="header-anchor" href="#elementos-de-creaci%C3%B3n-de-cursos">Elementos de creación de cursos</a></h1>
+<p>Descripción de los objetos en un curso</p>
+<p><strong>Nota:</strong> esta documentación fue adaptada y traducida de la oficial de <a href="https://reader.tutors.dev/course/tutors-reference-manual">tutors</a>, debido a que la original menciona funcionalidades que no están disponibles o no funcionan adecuadamente en los generadores de sitios estáticos.</p>
+<p>La mayoría de objetos que vamos a describir, se nombrarán colectivamente como “tarjetas”. La metáfora de las tarjetas se utiliza en Tutors como una característica visual simple para representar una variedad de recursos de aprendizaje. En general, el contenido de una tarjeta se extrae de lo siguiente:</p>
+<ul>
+<li>Un archivo Markdown que contiene el título del recurso y un breve resumen.</li>
+<li>Una imagen en formato png, jpg, gif o svg.</li>
+</ul>
+<p>El título, la imagen y el resumen se presentarán en la tarjeta, junto con un ícono adecuado.</p>
+<p>Los recursos de aprendizaje generalmente se nombran para que coincidan con el contexto y se encuentren en una carpeta cuyo nombre tiene una estructura que codifica el tipo de recurso de aprendizaje.</p>
+<p>El uso y visualización de las características descritas en este documento puede ser consultado en la <a href="https://github.com/tc-565/plantilla">plantilla</a> y su <a href="https://tc-565.github.io/plantilla">despliegue</a> respectivamente.</p>
+<p><div class="table-of-contents"><ul><li><a href="#elementos-de-creaci%C3%B3n-de-cursos">Elementos de creación de cursos</a><ul><li><a href="#nombres-de-recursos">Nombres de recursos</a><ul><li><a href="#nombres-de-archivo">Nombres de archivo</a></li></ul></li><li><a href="#estructura-de-un-curso">Estructura de un curso</a><ul><li><a href="#topic">Topic</a></li><li><a href="#unit">Unit</a></li><li><a href="#side">Side</a></li></ul></li><li><a href="#recursos-de-aprendizaje">Recursos de aprendizaje</a></li><li><a href="#recursos-tipo-carta">Recursos tipo carta</a><ul><li><a href="#talk">Talk</a></li><li><a href="#note">Note</a></li><li><a href="#web">Web</a></li><li><a href="#archive">Archive</a></li><li><a href="#github">Github</a></li></ul></li><li><a href="#recursos-tipo-panel">Recursos tipo panel</a><ul><li><a href="#paneltalk">Paneltalk</a></li><li><a href="#panelnote">Panelnote</a></li></ul></li><li><a href="#ordenando-recursos-de-aprendizaje-(opcional)">Ordenando recursos de aprendizaje (opcional)</a></li><li><a href="#%C3%ADconos-svg-(opcional)">Íconos SVG (opcional)</a></li><li><a href="#properties.yaml-1">Properties.yaml</a><ul><li><a href="#descripci%C3%B3n-del-curso%2C-atribuci%C3%B3n-del-curso">Descripción del curso, atribución del curso</a></li><li><a href="#imagen-o-%C3%ADcono-de-curso">Imagen o ícono de curso</a></li></ul></li><li><a href="#redimensionamiento-de-im%C3%A1genes">Redimensionamiento de imágenes</a></li><li><a href="#plantilla-y-curso-de-referencia">Plantilla y curso de referencia</a></li></ul></li></ul></div></p>
+<h2 id="nombres-de-recursos" tabindex="-1"><a class="header-anchor" href="#nombres-de-recursos">Nombres de recursos</a></h2>
+<p>Los nombres de las carpetas transmiten el tipo de recurso de aprendizaje contenido en la carpeta, y las primeras letras determinan su tipo. Las carpetas que comienzan con los siguientes nombres tienen un significado para el compilador de cursos:</p>
+<table>
+<thead>
+<tr>
+<th>Ejemplo</th>
+<th>Fuente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://tc-565.github.io/plantilla/topic-01-sin-unidades/index.html">topic</a></td>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades">Tópico de curso de nivel superior</a></td>
+</tr>
+<tr>
+<td><a href="https://tc-565.github.io/plantilla/topic-02-con-unidades/index.html">unit</a></td>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-02-con-unidades/unit-02-ordenado">Grupo de objetos de aprendizaje dentro de un Topic</a></td>
+</tr>
+<tr>
+<td><a href="https://tc-565.github.io/plantilla/topic-02-con-unidades/index.html">side</a></td>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-02-con-unidades/side-unit">Grupo de objetos de aprendizaje dentro de un Topic</a></td>
+</tr>
+<tr>
+<td><a href="https://tc-565.github.io/plantilla">archive</a></td>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/archive-01-logo">Archivo zip descargable</a></td>
+</tr>
+<tr>
+<td><a href="https://tc-565.github.io/plantilla">github</a></td>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/github-1-repositorio">Enlace a un repositorio de GitHub</a></td>
+</tr>
+<tr>
+<td><a href="https://tc-565.github.io/plantilla/topic-01-sin-unidades/note-01-nota/index.html">note</a></td>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades/note-01-nota">Página simple de texto escrito en Markdown</a></td>
+</tr>
+<tr>
+<td><a href="https://tc-565.github.io/plantilla/topic-04-panel-talk/index.html">paneltalk</a></td>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-04-panel-talk">Presentación en PDF de nivel superior</a></td>
+</tr>
+<tr>
+<td><a href="https://tc-565.github.io/plantilla/topic-03-panel-note/index.html">panelnote</a></td>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-03-panel-note/unit">Notas de pantalla completa</a></td>
+</tr>
+<tr>
+<td><a href="https://tc-565.github.io/plantilla/topic-01-sin-unidades//talk-01-presentacion/talk.pdf">talk</a></td>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades/talk-01-presentacion">Presentación estándar en formato PDF</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/unit-01-unidad">web</a></td>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/unit-01-unidad/web-1-tcu">Enlace a un sitio externo</a></td>
+</tr>
+</tbody>
+</table>
+<p>Para ordenar los objetos alfabéticamente, conviene agregar números. Para facilitar la comprensión del contexto del código fuente de otro lector, o nosotros en el futuro, es útil agregar también palabras clave al nombre de los directorios. Por ejemplo:</p>
+<table>
+<thead>
+<tr>
+<th>Nombre de directorio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>topic-01-intro</td>
+</tr>
+<tr>
+<td>topic-02-desarrollo-1</td>
+</tr>
+</tbody>
+</table>
+<p>Para todos los nombres de archivo y directorios, evite usar espacios a la hora de nombrarlos</p>
+<table>
+<thead>
+<tr>
+<th>Sí</th>
+<th>No</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>topic-01-intro</td>
+<td>Topic 01 Intro</td>
+</tr>
+<tr>
+<td>topic-02-desarrollo-1</td>
+<td>Topic 02 Desarrollo 1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nombres-de-archivo" tabindex="-1"><a class="header-anchor" href="#nombres-de-archivo">Nombres de archivo</a></h3>
+<p>Normalmente, cada recurso tiene los siguientes archivos:</p>
+<table>
+<thead>
+<tr>
+<th>Archivo</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nombre-del-recurso.md</td>
+<td>Un archivo markdown que normalmente contiene un título y una breve descripción para el recurso</td>
+</tr>
+<tr>
+<td>nombre-del-recurso.png</td>
+<td>Imagen con la que se muestra el recurso. Su nombre debe coincidir con el del archivo .md. La imagen puede estar en cualquiera de los formatos .png, .jpg. .jpeg, .gif</td>
+</tr>
+</tbody>
+</table>
+<p>Los siguientes nombres de archivo están reservados:</p>
+<table>
+<thead>
+<tr>
+<th>File name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>course.md</td>
+<td>Título del curso (obligatorio)</td>
+</tr>
+<tr>
+<td>properties.yaml</td>
+<td>Propiedades del curso (obligatorio)</td>
+</tr>
+<tr>
+<td>course.png</td>
+<td>Imagen del curso</td>
+</tr>
+<tr>
+<td>weburl</td>
+<td>enlace a un sitio web externo</td>
+</tr>
+<tr>
+<td>githubid</td>
+<td>enlace a un repositorio de GitHub</td>
+</tr>
+</tbody>
+</table>
+<h2 id="estructura-de-un-curso" tabindex="-1"><a class="header-anchor" href="#estructura-de-un-curso">Estructura de un curso</a></h2>
+<p>Un curso es un folder con recursos de aprendizaje que se nombran con las convenciones descritas en este documento.</p>
+<table>
+<thead>
+<tr>
+<th>Ejemplo de curso</th>
+<th>Visualización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla">Plantilla de referencia</a></td>
+<td><a href="https://tc-565.github.io/plantilla/">Plantilla de referencia</a></td>
+</tr>
+</tbody>
+</table>
+<p>Los mínimos requisitos para un curso son que el directorio contenga los siguientes archivos:</p>
+<table>
+<thead>
+<tr>
+<th>Nombre de archivo</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>course.md</td>
+<td>Título del curso + información general del curso</td>
+</tr>
+<tr>
+<td>course.png</td>
+<td>Imagen del curso</td>
+</tr>
+<tr>
+<td>properies.yaml</td>
+<td>Propiedades del curso</td>
+</tr>
+</tbody>
+</table>
+<h4 id="course.md" tabindex="-1"><a class="header-anchor" href="#course.md">course.md</a></h4>
+<p>Es un archivo markdown estructurado de la siguiente manera:</p>
+<pre class="hljs"><code>Título del curso
+
+Información del curso - un resumen del curso, descripción o cualquier otra información relevante. Puede tener cualquier longitud.
+</code></pre>
+<h4 id="properties.yaml" tabindex="-1"><a class="header-anchor" href="#properties.yaml">properties.yaml</a></h4>
+<p>Metadatos del curso en formato yaml. Debe contener al menos la siguiente línea:</p>
+<pre class="hljs"><code><span class="hljs-attr">credits:</span> <span class="hljs-string">Autor</span> <span class="hljs-string">del</span> <span class="hljs-string">curso</span> <span class="hljs-string">(o</span> <span class="hljs-string">si</span> <span class="hljs-string">quiere</span> <span class="hljs-string">una</span> <span class="hljs-string">descripción</span> <span class="hljs-string">del</span> <span class="hljs-string">curso)</span>
+</code></pre>
+<p>Los créditos aparecerán como un subtítulo en la barra de título del curso.</p>
+<p>También puede contener otras propiedades. Vea <a href="https://github.com/tc-565/plantilla/blob/main/properties.yaml">properties.yaml</a> para ver algunas propiedades aplicables.</p>
+<p>Un directorio/folder de curso normalmente contendrá Topics, el objeto descrito en la siguiente sección. Ocasionalmente también se pueden colocar unidades directamente en el directorio del curso.</p>
+<h3 id="topic" tabindex="-1"><a class="header-anchor" href="#topic">Topic</a></h3>
+<p>Recurso de aprendizaje de orden superior de un curso.</p>
+<table>
+<thead>
+<tr>
+<th>Ejemplo del recurso</th>
+<th>Visualización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://tc-565.github.io/plantilla/topic-01-sin-unidades/index.html">topic-01-sin-unidades</a></td>
+<td><a href="https://tc-565.github.io/plantilla/topic-01-sin-unidades">Topic sin unidades</a></td>
+</tr>
+</tbody>
+</table>
+<p>Se requieren dos archivos:</p>
+<table>
+<thead>
+<tr>
+<th>Archivos</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>topic.md</td>
+<td>Título del Topic + resumen. Puede usar cualquier nombre de archivo, y tiene que tener extensión .md</td>
+</tr>
+<tr>
+<td>topic.png</td>
+<td>Imagen para el Topic. El nombre del archivo debe coincidir con el del archivo .md. El tipo de archivo puede ser .png, .jpg, o .jpeg</td>
+</tr>
+</tbody>
+</table>
+<h4 id="topic.md" tabindex="-1"><a class="header-anchor" href="#topic.md">topic.md</a></h4>
+<p>El título y subtítulo son extraídos del archivo .md, por ejemplo:</p>
+<pre class="hljs"><code>Título
+
+Recursos simples de aprendizaje
+</code></pre>
+<p>Además del título, subtítulo y el archivo de imagen mencionados anteriormente, un Topic puede contener cualquier número de unidades (ver la siguiente sección) y recursos de aprendizaje.</p>
+<h3 id="unit" tabindex="-1"><a class="header-anchor" href="#unit">Unit</a></h3>
+<p>Una Unit encapsula recursos de aprendizaje enmarcados con un título. Las unidades pueden estar dentro de un Topic, o colocarse directamente en el directorio base del curso.</p>
+<table>
+<thead>
+<tr>
+<th>Ejemplo del recurso</th>
+<th>Visualización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-02-con-unidades/unit-02-ordenado">unit-02-ordenado</a></td>
+<td><a href="https://tc-565.github.io/plantilla/topic-02-con-unidades">Unidad ordenada</a></td>
+</tr>
+</tbody>
+</table>
+<p>Se requiere un archivo .md:</p>
+<table>
+<thead>
+<tr>
+<th>Archivos</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unit.md</td>
+<td>Título de la unidad. Se puede usar cualquier nombre de archivo, pero tiene que tener extensión .md</td>
+</tr>
+</tbody>
+</table>
+<p>El título es especificado en una sola linea del archivo markdown:</p>
+<h4 id="unit.md" tabindex="-1"><a class="header-anchor" href="#unit.md">unit.md</a></h4>
+<pre class="hljs"><code>Título de la unidad
+</code></pre>
+<p>Una unidad puede contener cualquier número de recursos de aprendizaje.</p>
+<h3 id="side" tabindex="-1"><a class="header-anchor" href="#side">Side</a></h3>
+<p>La unidad ‘side’ encapsula recursos de aprendizaje enmarcados con un título. Es equivalente a una unidad, pero es enmarcada de manera vertical.</p>
+<table>
+<thead>
+<tr>
+<th>Ejemplo del recurso</th>
+<th>Visualización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-02-con-unidades/side-unit">side-unit</a></td>
+<td><a href="https://tc-565.github.io/plantilla/topic-02-con-unidades/index.html">Side unit</a></td>
+</tr>
+</tbody>
+</table>
+<p>Se requiere un archivo .md:</p>
+<table>
+<thead>
+<tr>
+<th>Archivos</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>side.md</td>
+<td>Título de la unidad. Se puede usar cualquier nombre de archivo, pero tiene que tener extensión .md</td>
+</tr>
+</tbody>
+</table>
+<p>El título es especificado en una sola linea del archivo markdown:</p>
+<h4 id="side.md" tabindex="-1"><a class="header-anchor" href="#side.md">side.md</a></h4>
+<pre class="hljs"><code>Side unit
+</code></pre>
+<p>Una unidad ’side’ puede contener cualquier número de recursos de aprendizaje.</p>
+<h2 id="recursos-de-aprendizaje" tabindex="-1"><a class="header-anchor" href="#recursos-de-aprendizaje">Recursos de aprendizaje</a></h2>
+<p>Hay dos tipos generales de recursos de aprenizaje:</p>
+<ul>
+<li>Recursos de tipo carta</li>
+<li>Recursos de tipo panel</li>
+</ul>
+<p>Normalmente, una carta o un panel son recursos de aprendizaje que son subdirectorios dentro de un Topic o una Unit.</p>
+<h2 id="recursos-tipo-carta" tabindex="-1"><a class="header-anchor" href="#recursos-tipo-carta">Recursos tipo carta</a></h2>
+<p>Estos son recursos que están representados por cartas simples dentro de un Topic o una Unit:</p>
+<table>
+<thead>
+<tr>
+<th>Ejemplo del recurso</th>
+<th>Visualización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades/talk-01-presentacion">Presentación estándar en formato PDF</a></td>
+<td><a href="https://tc-565.github.io/plantilla/topic-01-sin-unidades//talk-01-presentacion/talk.pdf">Presentación 1</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades/note-01-nota">Página web escrita en markdown</a></td>
+<td><a href="https://tc-565.github.io/plantilla/topic-01-sin-unidades/note-01-nota/index.html">Nota</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades/web-1-tcu">Enlace a un sitio web</a></td>
+<td><a href="https://quimica.ucr.ac.cr/2019/09/07/promocion-de-las-ciencias-educacion-costarricense/">Sitio web TC-565</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades/archive-01-logo">Archivo .zip descargable</a></td>
+<td><a href="https://tc-565.github.io/plantilla/topic-01-sin-unidades/index.html">Recurso 1</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades/github-1-repositorio">Enlace a un repositorio de GitHub</a></td>
+<td><a href="https://github.com/tc-565/inicio">Código fuente del sitio</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="talk" tabindex="-1"><a class="header-anchor" href="#talk">Talk</a></h3>
+<p>El objeto talk es una presentación en PDF, documento o cualquier otro recurso en formato PDF.</p>
+<table>
+<thead>
+<tr>
+<th>Ejemplo del recurso</th>
+<th>Visualización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades/talk-01-presentacion">Presentación estándar en formato PDF</a></td>
+<td><a href="https://tc-565.github.io/plantilla/topic-01-sin-unidades//talk-01-presentacion/talk.pdf">Presentación 1</a></td>
+</tr>
+</tbody>
+</table>
+<p>El archivo PDF, la descripción y título en markdown y la imagen deben tener todos el mismo nombre, que puede ser arbitrario.</p>
+<table>
+<thead>
+<tr>
+<th>Archivos</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>intro.md</td>
+<td>Título y breve resumen de la presentación. El archivo puede tener un nombre arbitrario, pero tiene que tener extensión .md</td>
+</tr>
+<tr>
+<td>intro.png</td>
+<td>Imagen de la carta. El nombre del archivo debe ser el mismo que el del archivo .md. La extensión puede ser .png, .jpg, o .jpeg</td>
+</tr>
+<tr>
+<td>intro.pdf</td>
+<td>PDF a ser renderizado si la carta es seleccionada. Su nombre debe coincidir con el del archivo .md.</td>
+</tr>
+</tbody>
+</table>
+<p>El archivo .md provee el título y subtítulo de la carta:</p>
+<pre class="hljs"><code>Presentación 1
+
+Un breve resumen de los contenidos.
+</code></pre>
+<h3 id="note" tabindex="-1"><a class="header-anchor" href="#note">Note</a></h3>
+<p>Un objeto note es una página web escrita en markdown.</p>
+<table>
+<thead>
+<tr>
+<th>Ejemplo del recurso</th>
+<th>Visualización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades/note-01-nota">Página web escrita en markdown</a></td>
+<td><a href="https://tc-565.github.io/plantilla/topic-01-sin-unidades/note-01-nota/index.html">Nota</a></td>
+</tr>
+</tbody>
+</table>
+<p>Para referencias de sintaxis de markdown, puede revisar cualquiera de los siguientes recursos:</p>
+<ul>
+<li><a href="https://www.markdownguide.org/basic-syntax/">https://www.markdownguide.org/basic-syntax/</a></li>
+<li><a href="https://tc-565.github.io//homepage/public-site/topic-01-crear/index.html">https://tc-565.github.io//homepage/public-site/topic-01-crear/index.html</a></li>
+</ul>
+<p>Es importante resaltar que en internet encontrará diversas variantes de markdown que no son compatibles entre sí, así que en caso de duda, cíñase únicamente a las guías descritas arriba.</p>
+<p>Si desea incluir imágenes locales o enlaces a archivos, y quiere distribuirlos en la nota, inclúyalos en los directorios específicos descritos a continuación:</p>
+<table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>note.md</td>
+<td>Contenido de la nota. El archivo puede tener un nombre arbitrario, pero tiene que tener extensión .md</td>
+</tr>
+<tr>
+<td>intro.png</td>
+<td>Imagen de la carta. El nombre del archivo debe ser el mismo que el del archivo .md. La extensión puede ser .png, .jpg, o .jpeg</td>
+</tr>
+<tr>
+<td>img</td>
+<td>Folder que contiene las imágenes referenciadas en el texto</td>
+</tr>
+<tr>
+<td>archives</td>
+<td>Folder que contiene los archivos referenciados en el texto</td>
+</tr>
+</tbody>
+</table>
+<h3 id="web" tabindex="-1"><a class="header-anchor" href="#web">Web</a></h3>
+<p>Un enlace sencillo a un recurso web externo.</p>
+<table>
+<thead>
+<tr>
+<th>Ejemplo del recurso</th>
+<th>Visualización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades/web-1-tcu">Enlace a un sitio web</a></td>
+<td><a href="https://quimica.ucr.ac.cr/2019/09/07/promocion-de-las-ciencias-educacion-costarricense/">Sitio web TC-565</a></td>
+</tr>
+</tbody>
+</table>
+<p>Los archivos requeridos son:</p>
+<table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>web-link.md</td>
+<td>Título y breve descripción del enlace. El archivo puede tener un nombre arbitrario, pero tiene que tener extensión .md</td>
+</tr>
+<tr>
+<td>web-link.png</td>
+<td>Imagen de la carta. El nombre del archivo debe ser el mismo que el del archivo .md. La extensión puede ser .png, .jpg, o .jpeg</td>
+</tr>
+<tr>
+<td>weburl</td>
+<td>Archivo de texto sin extensión que contiene el enlace del sitio web en cuestión</td>
+</tr>
+</tbody>
+</table>
+<h3 id="archive" tabindex="-1"><a class="header-anchor" href="#archive">Archive</a></h3>
+<p>Un enlace a un archivo descargable (.zip).</p>
+<table>
+<thead>
+<tr>
+<th>Ejemplo del recurso</th>
+<th>Visualización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades/archive-01-logo">Archivo .zip descargable</a></td>
+<td><a href="https://tc-565.github.io/plantilla/topic-01-sin-unidades/index.html">Recurso 1</a></td>
+</tr>
+</tbody>
+</table>
+<p>Este archivo viene incluido en la fuente del curso, y es alojado junto a los recursos del sitio web.</p>
+<table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>archvivo.md</td>
+<td>Título y breve descripción del archivo. El archivo puede tener un nombre arbitrario, pero tiene que tener extensión .md</td>
+</tr>
+<tr>
+<td>archivo.png</td>
+<td>Imagen de la carta. El nombre del archivo debe ser el mismo que el del archivo .md. La extensión puede ser .png, .jpg, o .jpeg</td>
+</tr>
+<tr>
+<td>archivo.zip</td>
+<td>Archivo que será descargado si la carta es seleccionada</td>
+</tr>
+</tbody>
+</table>
+<h3 id="github" tabindex="-1"><a class="header-anchor" href="#github">Github</a></h3>
+<p>Enlace a un repositorio de GitHub.</p>
+<table>
+<thead>
+<tr>
+<th>Ejemplo del recurso</th>
+<th>Visualización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-01-sin-unidades/github-1-repositorio">Enlace a un repositorio de GitHub</a></td>
+<td><a href="https://github.com/tc-565/inicio">Código fuente del sitio</a></td>
+</tr>
+</tbody>
+</table>
+<p>Los archivos requeridos son:</p>
+<table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>github.md</td>
+<td>Título y breve descripción del repositorio de GitHub. El archivo puede tener un nombre arbitrario, pero tiene que tener extensión .md</td>
+</tr>
+<tr>
+<td>github.png</td>
+<td>Imagen de la carta. El nombre del archivo debe ser el mismo que el del archivo .md. La extensión puede ser .png, .jpg, o .jpeg</td>
+</tr>
+<tr>
+<td>githubid</td>
+<td>Enlace completo al repositorio en cuestión</td>
+</tr>
+</tbody>
+</table>
+<h2 id="recursos-tipo-panel" tabindex="-1"><a class="header-anchor" href="#recursos-tipo-panel">Recursos tipo panel</a></h2>
+<p>Los paneles aparecen directamente en una unidad o tópico, y no son representados por una carta independiente. Sus contenidos son renderizados directamente en el padre, sea Topic o Unit.</p>
+<table>
+<thead>
+<tr>
+<th>Ejemplo del recurso</th>
+<th>Visualización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-04-panel-talk">Presentación en PDF de nivel superior</a></td>
+<td><a href="https://tc-565.github.io/plantilla/topic-04-panel-talk/index.html">Panel Talk</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-03-panel-note/unit">Notas de pantalla completa</a></td>
+<td><a href="https://tc-565.github.io/plantilla/topic-03-panel-note/index.html">Panel-note (Título de la nota)</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="paneltalk" tabindex="-1"><a class="header-anchor" href="#paneltalk">Paneltalk</a></h3>
+<p>Un documento PDF que puede ser desplegado directamente en el padre, Unidad o Topic.</p>
+<table>
+<thead>
+<tr>
+<th>Ejemplo del recurso</th>
+<th>Visualización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-04-panel-talk">Presentación en PDF de nivel superior</a></td>
+<td><a href="https://tc-565.github.io/plantilla/topic-04-panel-talk/index.html">Panel Talk</a></td>
+</tr>
+</tbody>
+</table>
+<p>Se requieren dos archivos:</p>
+<table>
+<thead>
+<tr>
+<th>Archivos</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>intro.md</td>
+<td>Título y breve resumen de la presentación. El archivo puede tener un nombre arbitrario, pero tiene que tener extensión .md</td>
+</tr>
+<tr>
+<td>intro.pdf</td>
+<td>PDF a ser renderizado si la carta es seleccionada. Su nombre debe coincidir con el del archivo .md.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="panelnote" tabindex="-1"><a class="header-anchor" href="#panelnote">Panelnote</a></h3>
+<p>Un panel note es una página web completa escrita en markdown que se despliega directamente en el padre, Unidad o Topic.</p>
+<table>
+<thead>
+<tr>
+<th>Ejemplo del recurso</th>
+<th>Visualización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla/tree/main/topic-03-panel-note/unit">Notas de pantalla completa</a></td>
+<td><a href="https://tc-565.github.io/plantilla/topic-03-panel-note/index.html">Panel-note (Título de la nota)</a></td>
+</tr>
+</tbody>
+</table>
+<p>Para referencias de sintaxis de markdown, puede revisar cualquiera de los siguientes recursos:</p>
+<ul>
+<li><a href="https://www.markdownguide.org/basic-syntax/">https://www.markdownguide.org/basic-syntax/</a></li>
+<li><a href="https://tc-565.github.io//homepage/public-site/topic-01-crear/index.html">https://tc-565.github.io//homepage/public-site/topic-01-crear/index.html</a></li>
+</ul>
+<p>Es importante resaltar que en internet encontrará diversas variantes de markdown que no son compatibles entre sí, así que en caso de duda, cíñase únicamente a las guías descritas arriba.</p>
+<p>Si desea incluir imágenes locales o enlaces a archivos, y quiere distribuirlos en la nota, inclúyalos en los directorios específicos descritos a continuación:</p>
+<table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>note.md</td>
+<td>Contenido de la nota. El archivo puede tener un nombre arbitrario, pero tiene que tener extensión .md</td>
+</tr>
+<tr>
+<td>img</td>
+<td>Folder que contiene las imágenes referenciadas en el texto</td>
+</tr>
+<tr>
+<td>archives</td>
+<td>Folder que contiene los archivos referenciados en el texto</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ordenando-recursos-de-aprendizaje-(opcional)" tabindex="-1"><a class="header-anchor" href="#ordenando-recursos-de-aprendizaje-(opcional)">Ordenando recursos de aprendizaje (opcional)</a></h2>
+<p>Para un tópico o unidad, el orden predeterminado es el siguiente:</p>
+<ul>
+<li>talk</li>
+<li>lab</li>
+<li>note</li>
+<li>web</li>
+<li>github</li>
+<li>archive</li>
+</ul>
+<p>Este puede ser personalizado por medio de la introducción de secciones <a href="https://docs.zettlr.com/en/core/yaml-frontmatter/">FrontMatter</a> en los archivos markdown correspondientes.</p>
+<table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://tc-565.github.io/plantilla/topic-02-con-unidades/index.html">Ordenado</a></td>
+<td><a href="https://tc-565.github.io/plantilla/topic-02-con-unidades/index.html">Unidad ordenada</a></td>
+</tr>
+</tbody>
+</table>
+<p>Esta sección debe contener un número de orden, que dicta la secuencia de las cartas.</p>
+<pre class="hljs"><code><span class="hljs-meta">---</span>
+<span class="hljs-attr">order:</span> <span class="hljs-number">1</span>
+<span class="hljs-meta">---
+</span></code></pre>
+<p>Revise el ejemplo enlazado anteriormente para darse una mejor idea de cómo ordenar cartas. <code>order: 0</code> manda la carta al final.</p>
+<h2 id="%C3%ADconos-svg-(opcional)" tabindex="-1"><a class="header-anchor" href="#%C3%ADconos-svg-(opcional)">Íconos SVG (opcional)</a></h2>
+<p>Si no se encuentra un archivo de imagen en el recurso, el compilador de curso <a href="https://github.com/tutors-sdk/tutors">tutors</a> buscará si se especificó un ícono SVG. Este ícono se consigue de la colección Iconify:</p>
+<ul>
+<li><a href="https://icon-sets.iconify.design/">https://icon-sets.iconify.design/</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Ejemplo del recurso</th>
+<th>Visualización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/tc-565/plantilla">Plantilla</a></td>
+<td><a href="https://tc-565.github.io/plantilla/index.html">Iconos SVG en la plantilla</a></td>
+</tr>
+</tbody>
+</table>
+<p>En Iconify hay una barra de búsqueda, donde se pueden buscar varios íconos en el formato vectorial SVG. Incluya la referencia en el archivo markdown, y agregué un color. Por ejemplo:</p>
+<pre class="hljs"><code>---
+icon:
+<span class="hljs-section">  type: vscode-icons:file-type-pdf2
+---</span>
+</code></pre>
+<p>El ícono mencionado en el bloque de código anterior se obtiene del siguiente lugar:</p>
+<ul>
+<li><a href="https://icon-sets.iconify.design/vscode-icons/file-type-pdf2/">https://icon-sets.iconify.design/vscode-icons/file-type-pdf2/</a></li>
+</ul>
+<p>Para íconos monocromáticos se puede especificar el color con su nombre en inglés:</p>
+<pre class="hljs"><code>---
+icon:
+  type: bi:filetype-pptx
+<span class="hljs-section">  color: green
+---</span>
+</code></pre>
+<h2 id="properties.yaml-1" tabindex="-1"><a class="header-anchor" href="#properties.yaml-1">Properties.yaml</a></h2>
+<p>Este es un archivo en <a href="https://circleci.com/blog/what-is-yaml-a-beginner-s-guide/">formato YAML</a> que contiene una colección de parámetros para todo el curso. Este define, entre otros, los siguientes aspectos:</p>
+<ul>
+<li>Descripción/crédito del curso</li>
+<li>Ícono del curso</li>
+</ul>
+<h3 id="descripci%C3%B3n-del-curso%2C-atribuci%C3%B3n-del-curso" tabindex="-1"><a class="header-anchor" href="#descripci%C3%B3n-del-curso%2C-atribuci%C3%B3n-del-curso">Descripción del curso, atribución del curso</a></h3>
+<p>Los créditos son una entrada que se presenta como subtítulo en la barra superior de la página de inicio del curso. En nuestro caso, los usaremos para dar una descripción de los contenidos del curso.</p>
+<pre class="hljs"><code><span class="hljs-attr">credits:</span> <span class="hljs-string">Breve</span> <span class="hljs-string">descripción</span> <span class="hljs-string">del</span> <span class="hljs-string">curso</span>
+</code></pre>
+<p>El contenido de <code>credits</code> puede ser cualquier cadena de texto. Cerciórese de poner todo el texto en una sola línea, de lo contrario el curso no podrá compilarse.</p>
+<h3 id="imagen-o-%C3%ADcono-de-curso" tabindex="-1"><a class="header-anchor" href="#imagen-o-%C3%ADcono-de-curso">Imagen o ícono de curso</a></h3>
+<p>La imagen de un curso puede ser especificada con una imagen en el directorio del curso:</p>
+<ul>
+<li>course.png</li>
+</ul>
+<p>Alternativamente, se puede especificar un ícono SVG. Seleccione un ícono de Iconify:</p>
+<ul>
+<li><a href="https://icon-sets.iconify.design/">https://icon-sets.iconify.design/</a></li>
+</ul>
+<p>Especifique el ícono en <code>properties.yaml</code> de la siguiente manera:</p>
+<pre class="hljs"><code><span class="hljs-attr">icon :</span>
+  <span class="hljs-attr">type:</span> <span class="hljs-string">fa-solid:code-branch</span>
+  <span class="hljs-attr">color:</span> <span class="hljs-string">FFD601</span>
+</code></pre>
+<p>El ícono anterior se obtiene del siguiente lugar:</p>
+<ul>
+<li><a href="https://icon-sets.iconify.design/fa-solid/code-branch/">https://icon-sets.iconify.design/fa-solid/code-branch/</a></li>
+</ul>
+<h2 id="redimensionamiento-de-im%C3%A1genes" tabindex="-1"><a class="header-anchor" href="#redimensionamiento-de-im%C3%A1genes">Redimensionamiento de imágenes</a></h2>
+<p>Puede que algunas imágenes sean de muy alta resolución, por lo que aparecerían muy grandes en el sitio web. Esto puede suceder a menudo con capturas de pantalla. Puede utilizar el siguiente servicio para solventar el problema y redimensionar las imágenes a un tamaño adecuado:</p>
+<ul>
+<li><a href="https://nodeca.github.io/pica/demo">https://nodeca.github.io/pica/demo</a></li>
+</ul>
+<h2 id="plantilla-y-curso-de-referencia" tabindex="-1"><a class="header-anchor" href="#plantilla-y-curso-de-referencia">Plantilla y curso de referencia</a></h2>
+<p>El curso y plantilla de referencia puede ser consultado en:</p>
+<ul>
+<li><a href="https://github.com/tc-565/plantilla">https://github.com/tc-565/plantilla</a></li>
+</ul>
+<p>Y está publicado en:</p>
+<ul>
+<li><a href="https://tc-565.github.io/plantilla">https://tc-565.github.io/plantilla</a></li>
+</ul>
+<p>Este curso ilustra la mayoría de las funcionalidades descritas en este documento, y puede ser descargado en:</p>
+<ul>
+<li><a href="https://github.com/tc-565/plantilla/archive/refs/heads/main.zip">https://github.com/tc-565/plantilla/archive/refs/heads/main.zip</a></li>
+</ul>
+
+  </div>
+
+</div>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  </body>
+</html>
